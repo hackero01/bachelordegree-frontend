@@ -1,0 +1,419 @@
+﻿<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>PortalStudenti |  Student ZONE</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.png">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="/css/all.min.css">
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" href="/fonts/flaticon.css">
+    <!-- Full Calender CSS -->
+    <link rel="stylesheet" href="/css/fullcalendar.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="/css/animate.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/style.css">
+    <!-- Modernize js -->
+    <script src="/js/modernizr-3.6.0.min.js"></script>
+</head>
+
+<body onload="loadIndexOfStudents();">
+    <!-- Preloader Start Here -->
+    <div id="preloader"></div>
+    <!-- Preloader End Here -->
+    <div id="wrapper" class="wrapper bg-ash">
+        <!-- Header Menu Area Start Here -->
+        <div class="navbar navbar-expand-md header-menu-one bg-light">
+            <div class="nav-bar-header-one">
+                <div class="header-logo">
+                    <a href="index.html">
+                        <img src="/img/logo.jpg" alt="logo">
+                    </a>
+                </div>
+                <div class="toggle-button sidebar-toggle">
+                    <button type="button" class="item-link">
+                        <span class="btn-icon-wrap">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="d-md-none mobile-nav-bar">
+                <button class="navbar-toggler pulse-animation" type="button" data-toggle="collapse" data-target="#mobile-navbar" aria-expanded="false">
+                    <i class="far fa-arrow-alt-circle-down"></i>
+                </button>
+                <button type="button" class="navbar-toggler sidebar-toggle-mobile">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="header-main-menu collapse navbar-collapse" id="mobile-navbar">
+                <ul class="navbar-nav">
+                    <li class="navbar-item header-search-bar">
+                        <div class="input-group stylish-input-group">
+                            <span class="input-group-addon">
+
+                            </span>
+
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="navbar-item dropdown header-admin">
+                        <a class="navbar-nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                           aria-expanded="false">
+                            <div class="admin-title">
+                                <h5 class="item-title username"></h5>
+                                <span class="grad"></span>
+                            </div>
+                            <div class="admin-img">
+                                <img src="/img/figure/admin.jpg" alt="Admin">
+                            </div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div class="item-header">
+                                <h6 class="item-title username"></h6>
+                            </div>
+                            <div class="item-content">
+                                <ul class="settings-list">
+                                    <li><a href="user-profile.html"><i class="flaticon-user"></i>Profilul meu</a></li>
+
+                                    <li><a href="#"><i class="flaticon-chat-comment-oval-speech-bubble-with-text-lines"></i>Mesagerie</a></li>
+                                    <li><a href="#"><i class="flaticon-gear-loading"></i>Setari</a></li>
+                                    <li><a href="../../login.html" id="logoutBTN"><i class="flaticon-turn-off" id="logoutBTN"></i>Log Out</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="navbar-item dropdown header-message">
+                        <a class="navbar-nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                           aria-expanded="false">
+                            <i class="far fa-envelope"></i>
+                            <div class="item-title d-md-none text-16 mg-l-10">Message</div>
+                            <span>5</span>
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div class="item-header">
+                                <h6 class="item-title">05 Message</h6>
+                            </div>
+                            <div class="item-content">
+                                <div class="media">
+                                    <div class="item-img bg-skyblue author-online">
+                                        <img src="/img/figure/student11.png" alt="img">
+                                    </div>
+                                    <div class="media-body space-sm">
+                                        <div class="item-title">
+                                            <a href="#">
+                                                <span class="item-name">Maria Zaman</span>
+                                                <span class="item-time">18:30</span>
+                                            </a>
+                                        </div>
+                                        <p>
+                                            What is the reason of buy this item.
+                                            Is it usefull for me.....
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="item-img bg-yellow author-online">
+                                        <img src="/img/figure/student12.png" alt="img">
+                                    </div>
+                                    <div class="media-body space-sm">
+                                        <div class="item-title">
+                                            <a href="#">
+                                                <span class="item-name">Benny Roy</span>
+                                                <span class="item-time">10:35</span>
+                                            </a>
+                                        </div>
+                                        <p>
+                                            What is the reason of buy this item.
+                                            Is it usefull for me.....
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="item-img bg-pink">
+                                        <img src="/img/figure/student13.png" alt="img">
+                                    </div>
+                                    <div class="media-body space-sm">
+                                        <div class="item-title">
+                                            <a href="#">
+                                                <span class="item-name">Steven</span>
+                                                <span class="item-time">02:35</span>
+                                            </a>
+                                        </div>
+                                        <p>
+                                            What is the reason of buy this item.
+                                            Is it usefull for me.....
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="item-img bg-violet-blue">
+                                        <img src="/img/figure/student11.png" alt="img">
+                                    </div>
+                                    <div class="media-body space-sm">
+                                        <div class="item-title">
+                                            <a href="#">
+                                                <span class="item-name">Joshep Joe</span>
+                                                <span class="item-time">12:35</span>
+                                            </a>
+                                        </div>
+                                        <p>
+                                            What is the reason of buy this item.
+                                            Is it usefull for me.....
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+        <!-- Header Menu Area End Here -->
+        <!-- Page Area Start Here -->
+        <div class="dashboard-page-one">
+            <!-- Sidebar Area Start Here -->
+            <div class="sidebar-main sidebar-menu-one sidebar-expand-md sidebar-color">
+                <div class="d-md-none mobile-nav-bar">
+                    <button class="navbar-toggler pulse-animation" type="button" data-toggle="collapse" data-target="#mobile-navbar" aria-expanded="false">
+                        <i class="far fa-arrow-alt-circle-down"></i>
+                    </button>
+                    <button type="button" class="navbar-toggler sidebar-toggle-mobile">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <div class="sidebar-menu-content">
+                    <ul class="nav nav-sidebar-menu sidebar-toggle-view">
+
+                        <li class="nav-item sidebar-nav-item">
+                            <a href="#" class="nav-link"><i class="flaticon-classmates"></i><span>Specializarea mea</span></a>
+                            <ul class="nav sub-group-menu">
+                                <li class="nav-item">
+                                    <a href="my-group.html" class="nav-link">
+                                        <i class="fas fa-angle-right"></i>Grupa mea
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </li>
+                        <li class="nav-item sidebar-nav-item">
+                            <a href="#" class="nav-link"><i class="flaticon-shopping-list"></i><span>Examenele mele</span></a>
+                            <ul class="nav sub-group-menu">
+                                <li class="nav-item">
+                                    <a href="my-exams.html" class="nav-link">
+                                        <i class="fas fa-angle-right"></i>Lista
+                                        Examene
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="my-grades.html" class="nav-link">
+                                        <i class="fas fa-angle-right"></i>Note obtinute
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="messaging.html" class="nav-link">
+                                <i class="flaticon-chat"></i><span>Mesagerie</span>
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+            <!-- Sidebar Area End Here -->
+            <div class="dashboard-content-one">
+                <!-- Sidebar Area End Here -->
+                <div class="dashboard-content-one">
+                    <!-- Breadcubs Area Start Here -->
+                    <div class="breadcrumbs-area">
+                        <h3>Student zone</h3>
+                        <ul>
+                            <li>
+                                <a href="index.html">Acasa</a>
+                            </li>
+                            <li>Pagina principala</li>
+                        </ul>
+                    </div>
+
+                    <!-- Breadcubs Area End Here -->
+                    <div class="row">
+                        <!-- Student Info Area Start Here -->
+                        <div class="col-14-xxxl col-12">
+                            <div class="card dashboard-card-ten">
+                                <div class="card-body">
+
+                                    <div class="student-info">
+
+                                        <div class="table-responsive info-table">
+                                            <div class="header-inline item-header">
+                                                <h3 class="text-dark-medium font-medium username"></h3>
+                                                <div class="header-elements">
+                                                    <ul>
+                                                        <li><a href="#" class="modal-trigger" data-toggle="modal" data-target="#modal-editUserProfile"><i class="far fa-edit"></i></a></li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                "Invatam sa nu murim"
+
+                                            </p>
+                                            <table class="table text-nowrap">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Nume:</td>
+                                                        <td class="font-medium text-dark-medium firstName"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Prenume:</td>
+                                                        <td class="font-medium text-dark-medium lastName"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>E-mail:</td>
+                                                        <td class="font-medium text-dark-medium email"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Adresa:</td>
+                                                        <td class="font-medium text-dark-medium adresa"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Numar telefon:</td>
+                                                        <td class="font-medium text-dark-medium numarTelefon"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>An studiu:</td>
+                                                        <td class="font-medium text-dark-medium anStudiu"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Numar credite:</td>
+                                                        <td class="font-medium text-dark-medium credite"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Student la:</td>
+                                                        <td class="font-medium text-dark-medium nspecializare"></td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal sign-up-modal fade" id="modal-editUserProfile" tabindex="-1" role="dialog"
+                                 aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="close-btn">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="item-logo">
+                                                <img src="/img/logo.png" alt="logo">
+                                            </div>
+                                            <form class="login-form">
+                                                <div class="row gutters-15">
+                                                    <div class="form-group col-12">
+                                                        <input type="text" placeholder="FirstName" class="form-control" id="InputNumeProfilAdmin">
+                                                    </div>
+                                                    <div class="form-group col-12">
+                                                        <input type="text" placeholder="LastName"
+                                                               class="form-control" id="InputPrenumeProfiilAdmin">
+                                                    </div>
+                                                    <div class="form-group col-sm-6">
+                                                        <input type="text" placeholder="Adress" class="form-control" id="InputAdresaProfilAdmin">
+                                                    </div>
+                                                    <div class="form-group col-sm-6">
+                                                        <input type="text" placeholder="Email"
+                                                               class="form-control" id="InputEmailProfilAdmin">
+                                                    </div>
+                                                    <div class="form-group col-12">
+                                                        <input type="text" placeholder="Password"
+                                                               class="form-control" id="InputParolaProfilAdmin">
+                                                    </div>
+                                                    <div class="form-group col-12">
+                                                        <input type="text" placeholder="Phone number"
+                                                               class="form-control" id="InputNumarProfilAdmin">
+                                                    </div>
+
+                                                    <div class="form-group col-12">
+                                                        <button type="button" id="btnActualizeazaInformatii" class="btn-fill-md text-light bg-dodger-blue">Edit</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Student Info Area End Here -->
+                       
+                    </div>
+                  
+                </div>
+
+
+
+                <!-- Footer Area Start Here -->
+                <footer class="footer-wrap-layout1">
+                </footer>
+                <!-- Footer Area End Here -->
+            </div>
+
+        </div>
+    </div>
+    <!-- Page Area End Here -->
+    <!-- jquery-->
+    <script src="/js/jquery-3.3.1.min.js"></script>
+
+    <script src="/js/jquery.dataTables.min.js"></script>
+
+    <script src="/js/functii.js"></script>
+    <!-- Plugins js -->
+    <script src="/js/plugins.js"></script>
+    <!-- Popper js -->
+    <script src="/js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- Counterup Js -->
+    <script src="/js/jquery.counterup.min.js"></script>
+    <!-- Moment Js -->
+    <script src="/js/moment.min.js"></script>
+    <!-- Waypoints Js -->
+    <script src="/js/jquery.waypoints.min.js"></script>
+    <!-- Scroll Up Js -->
+    <script src="/js/jquery.scrollUp.min.js"></script>
+    <!-- Full Calender Js -->
+    <script src="/js/fullcalendar.min.js"></script>
+    <!-- Chart Js -->
+    <script src="/js/Chart.min.js"></script>
+    <!-- Custom Js -->
+    <script src="/js/main.js"></script>
+
+</body>
+
+</html>
